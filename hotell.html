@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="css/style.css" /></head>
+  <body>
+    
+    <header>
+      <nav class="header-container">
+        <a href="index.html" class="logo-container">
+          <img src="images/fav.png" alt="Travel Agency Logo" class="logo" />
+        </a>
+        <div class="icon-container">
+          <a href="#" aria-label="Search">
+            <img src="images/search.png" alt="Search Icon" class="icon" />
+          </a>
+          <a href="#" aria-label="User Profile">
+            <img src="images/user.png" alt="User Icon" class="icon" />
+          </a>
+          <a href="#" aria-label="Menu">
+            <img src="images/menu.png" alt="Menu Icon" class="icon" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+  
+      <section class="image-slider">
+        
+        <nav class="slides-container">
+          <img
+            src="images/landscape-2016308_640.jpg"
+            alt="View of Parga Beach"
+            class="image-slide"
+          />
+          <img
+            src="images/beach-1836467_640.jpg"
+            alt="View 2"
+            class="image-slide"
+          />
+          <img src="images/sea-banner.jpg" alt="View 3" class="image-slide" />
+          <img
+            src="images/beach-666122_640.jpg"
+            alt="View 4"
+            class="image-slide"
+          />
+          <img
+            src="images/beach-6514331_640.jpg"
+            alt="View 5"
+            class="image-slide"
+          />
+          <img
+            src="images/holiday-2733322_1280.jpg"
+            alt="View 6"
+            class="image-slide"
+          />
+        </nav>
+
+      
+        <button aria-label="Previous Image" class="left-arrow">&lt;</button>
+        <button aria-label="Next Image" class="right-arrow">&gt;</button>
+
+    
+        <span class="image-counter">
+          <img
+            src="images/image-gallery.png"
+            alt="Gallery Icon"
+            class="gallery-icon"
+          />
+          49
+        </span>
+        <button class="favourite-icon">
+          <img src="images/love.png" alt="" />
+        </button>
+      </section>
+
+  
+      <nav class="tab-navigation">
+        <ul>
+          <li class="active"><a href="#">Oversikt</a></li>
+          <li><a href="#hotel-details">Fasiliteter</a></li>
+          <li><a href="#room-section">Rom</a></li>
+        </ul>
+      </nav>
+
+     
+
+      <article class="hotel-details">
+        <h2>Parga Beach</h2>
+        <section class="rating-container">
+          <section class="rating-stars">
+            <img src="images/star.png" alt="Star">
+            <img src="images/star.png" alt="Star">
+            <img src="images/star.png" alt="Star">
+            <img src="images/star.png" alt="Star">
+            <img src="images/rating.png" alt="Star">
+        </section>
+          <aside>
+            <span class="rating-number">8.9</span>
+            <span class="rating-text">Fantastisk</span>
+          </aside>
+          <a href="#" class="review-link">Se alle anmeldelsene ></a>
+        </section>
+        <h2 id="hotel-details">Fasiliteter</h2>
+        <p>
+          Parga Beach tilbyr et tilsynelatende uttømmelig utvalg av sport og
+          aktiviteter og lokker til seg så vel eliteutøvere som aktive familier
+          og hverdagsmosjonister – i alle aldere og på alle nivåer.
+        </p>
+        <section class="features-grid">
+          <figure>
+            <img src="images/pawprint.png" alt="Kjæledyr-vennlig" />
+            <figcaption>Kjæledyr-vennlig</figcaption>
+          </figure>
+          <figure>
+            <img src="images/dinner.png" alt="Romservice" />
+            <figcaption>Romservice</figcaption>
+          </figure>
+          <figure>
+            <img src="images/cup-of-drink.png" alt="Frokost" />
+            <figcaption>Frokost</figcaption>
+          </figure>
+          <figure>
+            <img src="images/cocktail.png" alt="Bar" />
+            <figcaption>Bar</figcaption>
+          </figure>
+          <figure>
+            <img src="images/plant.png" alt="Spa" />
+            <figcaption>Spa</figcaption>
+          </figure>
+          <figure>
+            <img src="images/dumbbell.png" alt="Treningssenter" />
+            <figcaption>Treningssenter</figcaption>
+          </figure>
+        </section>
+        <a href="#" class="all-features-link">Se alle eiendomsfasiliteter ></a>
+      </article>
+
+      <section class="map-section">
+        <h2>Utforsk området</h2>
+        <img
+          src="images/mapoftask.png"
+          alt="Parga Beach Resort Map"
+          class="map-background"
+        />
+        <article class="info-box">
+          <h3>Parga Beach Resort</h3>
+          <p>Χρυσογιάλι 480 60, Greece</p>
+          <span class="rating">4.6 ★★★★★</span>
+          <a href="#" class="map-link">Vis større kart</a>
+        </article>
+        <button class="zoom-out">-</button>
+        <button class="zoom-in">+</button>
+        <img src="images/smallmap.png" alt="Mini Map" class="mini-map" />
+      </section>
+
+      <section class="booking-summary">
+        <span class="booking-price">8 733 kr</span>
+        <span class="price-per-night">2 394 kr per natt</span>
+        <button class="book-now-btn">Velg rom</button>
+      </section>
+
+      <section class="room-selection" id="room-section">
+        <h2>Velg rom</h2>
+        <article class="room-option">
+          <img src="images/beach-6514331_640.jpg" alt="Junior Suite">
+          <h3>Junior Suite</h3>
+          <p>Plass til 2 * Queen size-seng</p>
+          <section class="rating">
+            <span class="rating-number">8.9</span>
+            <span class="reviews">59 anmeldelser</span>
+        </section>
+          <h2 class="price">6 789 kr</h2>
+          <p>for 3 netter, 1 rom</p>
+          <p>2 263 kr per natt</p>
+          <p>Ink moms og avgifter</p>
+        </article>
+        <article class="room-option">
+          <img src="images/beach-6514331_640.jpg" alt="Junior Suite">
+          <h3>Junior Suite</h3>
+          <p>Plass til 2 * Queen size-seng</p>
+          <section class="rating">
+            <span class="rating-number">8.9</span>
+            <span class="reviews">59 anmeldelser</span>
+        </section>
+          <h2 class="price">6 789 kr</h2>
+          <p>for 3 netter, 1 rom</p>
+          <p>2 263 kr per natt</p>
+          <p>Ink moms og avgifter</p>
+        </article>
+        <article class="room-option">
+          <img src="images/beach-6514331_640.jpg" alt="Junior Suite">
+          <h3>Junior Suite</h3>
+          <p>Plass til 2 * Queen size-seng</p>
+          <section class="rating">
+            <span class="rating-number">8.9</span>
+            <span class="reviews">59 anmeldelser</span>
+        </section>
+          <h2 class="price">6 789 kr</h2>
+          <p>for 3 netter, 1 rom</p>
+          <p>2 263 kr per natt</p>
+          <p>Ink moms og avgifter</p>
+        </article>
+        <article class="room-option">
+          <img src="images/beach-6514331_640.jpg" alt="Junior Suite">
+          <h3>Junior Suite</h3>
+          <p>Plass til 2 * Queen size-seng</p>
+          <section class="rating">
+            <span class="rating-number">8.9</span>
+            <span class="reviews">59 anmeldelser</span>
+        </section>
+          <h2 class="price">6 789 kr</h2>
+          <p>for 3 netter, 1 rom</p>
+          <p>2 263 kr per natt</p>
+          <p>Ink moms og avgifter</p>
+        </article>
+        
+      </section>
+
+    </main>
+    
+    <footer class="footer">
+     
+      <section class="footer-top">
+        <span><img src="flags/sweden.png" alt="Sverige" /> Sverige</span>
+        <span><img src="flags/denmark.png" alt="Danmark" /> Danmark</span>
+        <span><img src="flags/norway.png" alt="Norge" /> Norge</span>
+        <span><img src="flags/material.png" alt="Suomi" /> Suomi</span>
+        <span
+          ><img src="flags/netherlands.png" alt="Nederland" /> Nederland</span
+        >
+      </section>
+
+    
+      <section class="payment-methods">
+        <h3>BETALINGSMETODER</h3>
+        <span><img src="images/visa.png" alt="VISA"></span>
+        <span><img src="images/mastercard.png" alt="Mastercard"></span>
+        <span><img src="images/paypal-logo.png" alt="PayPal"></span>
+        <span><img src="images/apple-pay.png" alt="Apple Pay"></span>
+        <span><img src="images/tap-to-pay.png" alt="Tap To Pay"></span>
+      </section>
+
+     
+      <section class="footer-middle">
+        <div class="newsletter-container">
+          <h3>NYHETER & TILBUD</h3>
+         
+          <article class="newsletter">
+            <p>Meld deg på nyhetsbrev her</p>
+            <form>
+              <input type="email" placeholder="ola@example.com" />
+              <button type="submit">Send</button>
+            </form>
+            <a href="#">Kjøp reisegavekort</a>
+          </article>
+        </div>
+        <article class="customer-service">
+          <h3>KUNDESERVICE</h3>
+          <ul>
+            <li><a href="#">Spørsmål og Svar</a></li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="Tilgjengeligshetserklæring.xltx">Tilgjengelighetserklæring</a></li>
+          </ul>
+        </article>
+      </section>
+
+      
+      <nav class="social-media">
+        <h3>SOSIALE MEDIER</h3>
+        <span><img src="images/instagram.png" alt="Instagram" /></span>
+        <span><img src="images/facebook.png" alt="Facebook" /></span>
+        <span><img src="images/social.png" alt="Pinterest" /></span>
+        <span><img src="images/tik-tok.png" alt="TikTok" /></span>
+        <span><img src="images/youtube.png" alt="YouTube" /></span>
+      </nav>
+    </footer>
+  </body>
+</html>

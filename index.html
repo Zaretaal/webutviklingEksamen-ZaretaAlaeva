@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="header-container">
+      <a href="index.html" class="logo-container">
+        <img src="images/fav.png" alt="Travel Agency Logo" class="logo">
+      </a>
+      <div class="icon-container">
+        <a href="#" aria-label="Search">
+          <img src="images/search.png" alt="Search Icon" class="icon">
+        </a>
+        <a href="#" aria-label="User Profile">
+          <img src="images/user.png" alt="User Icon" class="icon">
+        </a>
+        <a href="#" aria-label="Menu">
+          <img src="images/menu.png" alt="Menu Icon" class="icon">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="banner">
+    <div class="overlay"></div>
+  </section>
+
+
+  <section class="booking-section">
+    <div class="booking-container">
+   
+      <nav class="tabs-container">
+        <nav class="tabs">
+          <button class="tab active">
+            <img src="images/briefcase.png" alt="Briefcase Icon">Fly + Hotell
+          </button>
+          <button class="tab">
+            <img src="images/airplane.png" alt="Airplane Icon">Fly
+          </button>
+          <button class="tab">
+            <img src="images/city.png" alt="City Icon">Storby
+          </button>
+          <button class="tab">
+            <img src="images/ski.png" alt="Ski Icon">Ski
+          </button>
+          <button class="tab">
+            <img src="images/map.png" alt="Map Icon">Kombinasjoner
+          </button>
+        </nav>
+        <button class="arrow-right" aria-label="Scroll right">›</button>
+    </nav>
+      
+      
+      <form class="booking-form">
+        <section class="form-group">
+            <label for="from" class="label-one">Fra</label>
+            <select id="from">
+                <option value="oslo">Oslo Lufthavn</option>
+                <option value="bergen">Bergen Lufthavn</option>
+                <option value="stavanger">Stavanger Lufthavn</option>
+            </select>
+        </section>
+        <section class="form-group">
+            <label for="to" class="label-one">Til</label>
+            <select id="to">
+                <option value="albania">Albania</option>
+                <option value="spain">Spania</option>
+                <option value="italy">Italia</option>
+            </select>
+        </section>
+        <section class="duration-date-group">
+            <section class="form-group">
+                <label for="duration" class="label-one">Reiselengde</label>
+                <select id="duration">
+                    <option value="less_than_week">Mindre enn 1 uke</option>
+                    <option value="one_week">1 uke</option>
+                    <option value="two_weeks">2 uker</option>
+                </select>
+            </section>
+            <section class="form-group">
+                <label for="date" class="label-one">Velg dato</label>
+                <input type="date" id="date">
+            </section>
+        </section>
+        <section class="form-group">
+            <label for="travelers" class="label-one">Antall reisende</label>
+            <select id="travelers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4+</option>
+            </select>
+        </section>
+        <button type="submit" class="search-btn">Søk</button>
+    </form>
+    
+    </div>
+  </section>
+
+
+<section class="special-offer">
+  <div class="offer-content">
+    <h2>Bestill sommerens beste uke</h2>
+    <p>Fly + hotell, 7 dager</p>
+    <h3>Fra 3 298,–</h3>
+  </div>
+  <a href="order.html" class="offer-button">Bestill i dag</a>
+</section>
+
+
+<section class="slideshow-container">
+  <nav class="slideshow">
+    <article class="slide">
+      <h3>Få eksklusive tilbud</h3>
+      <a href="#">Logg inn/opprett konto og få rabattkoder »</a>
+    </article>
+
+    <article class="slide">
+      <h3>Billige restplasser</h3>
+      <a href="#">Opptil 50% rabatt »</a>
+    </article>
+
+    <article class="slide">
+      <h3>Mars - spar opptil 5000,-</h3>
+      <a href="#">Sikre deg et ferie kupp »</a>
+    </article>
+  </nav>
+</section>
+
+<section class="tips-inspirasjon">
+  <h2>Tips & inspirasjon</h2>
+
+  <article class="inspiration-card">
+    <span class="deal-label">Ukens Deal</span>
+    <img src="images/beach-6514331_640.jpg" alt="Greske favoritter">
+    <h3>Greske favoritter</h3>
+    <p>Akkurat nå får du 1 000,- i rabatt per bestilling til bl.a. Parga, Sivota, Lefkas, Korfu og Kalamata i Hellas...</p>
+    <a href="#">Fra kr 3 970 →</a>
+  </article>
+
+  <article class="inspiration-card">
+    <img src="images/beach-1836467_640.jpg" alt="Solskinnspriser">
+    <h3>Solskinnspriser – bestill i dag!</h3>
+    <p>Spar opptil 45%. Akkurat nå tilbyr vi billige vinterreiser til mange reisemål...</p>
+    <a href="#">Fra kr 3 203 →</a>
+  </article>
+
+  <article class="inspiration-card">
+    <img src="images/cathedral-427997_640.jpg" alt="Storbyferie">
+    <h3>Storbyferie</h3>
+    <p>Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reiselengde...</p>
+    <a href="#">Les mer →</a>
+  </article>
+
+  <article class="inspiration-card">
+    <img src="images/building-7014904_640.jpg" alt="Påskefavoritten London">
+    <h3>Besøk påskefavoritten London</h3>
+    <p>London er en av de mest populære reisemålene i påsken, kjent for sin unike blanding av historie...</p>
+    <a href="#">Fra kr 2 150 →</a>
+  </article>
+
+  <article class="inspiration-card">
+    <span class="deal-label blue">Nyhet</span>
+    <img src="images/ski-slope-3223709_640.jpg" alt="Skiferie">
+    <h3>Skiferie</h3>
+    <p>Drømmer du om puddersnø, frisk fjelluft og fartsfylte nedfarter? Vinteren er endelig her...</p>
+    <a href="#">Se alle skistedene →</a>
+  </article>
+
+  <article class="inspiration-card">
+    <img src="images/beach-666122_640.jpg" alt="Spar opptil 7000,- til sommer">
+    <h3>Spar opptil 7000,- til sommer</h3>
+    <p>Drømmer du om solfylte dager og eksotiske opplevelser? Nå har du sjansen til å sikre deg en drømmeferie...</p>
+    <a href="#">Les mer →</a>
+  </article>
+</section>
+
+ 
+<footer class="footer">
+  
+  
+  <section class="footer-top">
+    <span><img src="flags/sweden.png" alt="Sverige"> Sverige</span>
+    <span><img src="flags/denmark.png" alt="Danmark"> Danmark</span>
+    <span><img src="flags/norway.png" alt="Norge"> Norge</span>
+    <span><img src="flags/material.png" alt="Suomi"> Suomi</span>
+    <span><img src="flags/netherlands.png" alt="Nederland"> Nederland</span>
+  </section>
+
+ 
+  <section class="payment-methods">
+    <h3>BETALINGSMETODER</h3>
+    <span><img src="images/visa.png" alt="VISA"></span>
+    <span><img src="images/mastercard.png" alt="Mastercard"></span>
+    <span><img src="images/paypal-logo.png" alt="PayPal"></span>
+    <span><img src="images/apple-pay.png" alt="Apple Pay"></span>
+    <span><img src="images/tap-to-pay.png" alt="Tap To Pay"></span>
+  </section>
+
+
+<section class="footer-middle">
+  <div class="newsletter-container">
+      <h3>NYHETER & TILBUD</h3> 
+      <article class="newsletter">
+          <p>Meld deg på nyhetsbrev her</p>
+          <form>
+              <input type="email" placeholder="ola@example.com">
+              <button type="submit">Send</button>
+          </form>
+          <a href="#">Kjøp reisegavekort</a>
+      </article>
+  </div>
+
+  <article class="customer-service">
+      <h3>KUNDESERVICE</h3>
+      <ul>
+          <li><a href="#">Spørsmål og Svar</a></li>
+          <li><a href="#">Chat</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="Tilgjengeligshetserklæring.xltx">Tilgjengelighetserklæring</a></li>
+      </ul>
+  </article>
+</section>
+
+
+  
+  <nav class="social-media">
+    <h3>SOSIALE MEDIER</h3>
+    <span><img src="images/instagram.png" alt="Instagram"></span>
+    <span><img src="images/facebook.png" alt="Facebook"></span>
+    <span><img src="images/social.png" alt="Pinterest"></span>
+    <span><img src="images/tik-tok.png" alt="TikTok"></span>
+    <span><img src="images/youtube.png" alt="YouTube"></span>
+  </nav>
+
+</footer>
+
+  
+</body>
+</html>

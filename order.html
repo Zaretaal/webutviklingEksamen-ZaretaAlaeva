@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <nav class="header-container">
+        <a href="index.html" class="logo-container">
+          <img src="images/fav.png" alt="Travel Agency Logo" class="logo" />
+        </a>
+        <div class="icon-container">
+          <a href="#" aria-label="Search">
+            <img src="images/search.png" alt="Search Icon" class="icon" />
+          </a>
+          <a href="#" aria-label="User Profile">
+            <img src="images/user.png" alt="User Icon" class="icon" />
+          </a>
+          <a href="#" aria-label="Menu">
+            <img src="images/menu.png" alt="Menu Icon" class="icon" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    
+   
+    <nav class="scroll-container">
+      <a href="index.html" class="mobile-tab">Søk</a>
+      <a href="hotell.html" class="mobile-tab">Søkeresultater</a>
+      <a href="hotell.html" class="mobile-tab">Romtype</a>
+      <a href="https://www.norwegian.no/" target="_blank" class="mobile-tab">Fly</a>
+      <button class="mobile-tab">Tillegg</button>
+      <button class="mobile-tab active"><strong>OPPLYSNINGER</strong></button>
+      <a href="#siste-trinn" class="mobile-tab">Bestill</a>
+    </nav>
+
+    <main class="order-main">
+      <section class="toggle-section">
+    <input type="checkbox" id="toggle-details" class="toggle-checkbox" />
+    <label for="toggle-details" class="toggle-label">
+        <span class="toggle-header-icon">〱</span>
+        <span class="toggle-header">Dine valg</span> 
+    </label>
+    <article class="toggle-content">
+        <img src="images/landscape-2016308_640.jpg" alt="Parga Beach" class="toggle-image">
+        <section class="info">
+            <p class="location"><strong>Parga Beach</strong></p>
+            <section class="stars">
+                <img src="images/sunny.png" alt="Star" class="star">
+                <img src="images/sunny.png" alt="Star" class="star">
+                <img src="images/sunny.png" alt="Star" class="star">
+                <img src="images/sunny.png" alt="Star" class="star">
+                <img src="images/sunny.png" alt="Star" class="star">
+            </section>
+            <p class="details">
+                <img src="images/maps-and-flags.png" alt="" class="info-icon"> Hellas, Parga
+            </p>
+            <p class="dates">
+                <img src="images/calendar.png" alt="" class="info-icon"> Man 5 mai - man 12 mai 2025
+            </p>
+            <p class="guests">
+                <img src="images/user.png" alt="" class="info-icon"> 2 Voksne
+            </p>
+            <p class="room-type">
+                <img src="images/sleeping.png" alt="" class="info-icon"> Deluxerom, Balkong og ikke spesifisert utsikt.
+            </p>
+            <p class="breakfast">
+                <img src="images/knife-and-fork.png" alt="" class="info-icon"> Frokostbuffé
+            </p>
+            <p class="airport-station">
+                <img src="images/take-off.png" alt="" class="info-icon"> Oslo Lufthavn - Preveza
+            </p>
+            <p class="prices">22 003,-</p>
+            <p class="prices">19 803,-</p>
+        </section>
+    </article>
+</section>
+
+<section class="booking-info">
+  <h2>Oppgi dine bestillingsopplysninger</h2>
+  <form>
+      <fieldset>
+          <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
+  
+          <label for="firstName">FORNAVN (IFØLGE PASS):</label>
+          <input type="text" id="firstName" name="firstName" required />
+  
+          <label for="lastName">ETTERNAVN (IFØLGE PASS):</label>
+          <input type="text" id="lastName" name="lastName" required />
+  
+          <label for="birthdate">FØDSELSDATO:</label>
+          <input type="number" id="birthdate" placeholder="DD" required />
+          <input type="number" id="birthmonth" placeholder="MM" required />
+          <input type="number" id="birthyear" placeholder="ÅÅÅÅ" required />
+  
+          <label for="email">E-POSTADRESSE:</label>
+          <input type="email" id="email" />
+  
+          <label for="phone">TELEFONNUMMER:</label>
+          <input type="tel" id="phone" />
+  
+          <label for="address">GATEADRESSE:</label>
+          <input type="text" id="address" />
+  
+          <label for="zipcode">POSTNUMMER:</label>
+          <input type="text" id="zipcode" />
+  
+          <label for="city">POSTSTED:</label>
+          <input type="text" id="city" />
+  
+          <label for="country">LAND:</label>
+          <select id="country" name="country" required>
+              <option value="">Velg et land</option>
+              <option value="NO">Norge</option>
+              <option value="SE">Sverige</option>
+              <option value="DK">Danmark</option>
+              <option value="FI">Finland</option>
+          </select>
+      </fieldset>
+  
+      <fieldset>
+          <legend>VOKSEN 18+</legend>
+  
+          <label for="guestFirstName">FORNAVN (IFØLGE PASS):</label>
+          <input type="text" id="guestFirstName" />
+  
+          <label for="guestLastName">ETTERNAVN (IFØLGE PASS):</label>
+          <input type="text" id="guestLastName" />
+  
+          <label for="guestDay">FØDSELSDATO:</label>
+          <input type="number" id="guestDay" name="guestDay" min="1" max="31" placeholder="DD" required />
+          <input type="number" id="guestMonth" name="guestMonth" min="1" max="12" placeholder="MM" required />
+          <input type="number" id="guestYear" name="guestYear" min="1900" max="2025" placeholder="ÅÅÅÅ" required />
+  
+          <label for="guestFemale">KJØNN:</label>
+          <input type="radio" id="guestFemale" name="guestGender" value="female" />
+          <label for="guestFemale">KVINNE</label>
+          <input type="radio" id="guestMale" name="guestGender" value="male" />
+          <label for="guestMale">MANN</label>
+      </fieldset>
+  
+      <button type="submit" id="siste-trinn">Siste trinn →</button>
+  </form>
+</section>
+
+
+
+  
+  
+    </main>
+
+  
+    <footer class="footer">
+  
+      <section class="footer-top">
+        <span><img src="flags/sweden.png" alt="Sverige" /> Sverige</span>
+        <span><img src="flags/denmark.png" alt="Danmark" /> Danmark</span>
+        <span><img src="flags/norway.png" alt="Norge" /> Norge</span>
+        <span><img src="flags/material.png" alt="Suomi" /> Suomi</span>
+        <span
+          ><img src="flags/netherlands.png" alt="Nederland" /> Nederland</span
+        >
+      </section>
+
+      
+      <section class="payment-methods">
+        <h3>BETALINGSMETODER</h3>
+        <span><img src="images/visa.png" alt="VISA"></span>
+        <span><img src="images/mastercard.png" alt="Mastercard"></span>
+        <span><img src="images/paypal-logo.png" alt="PayPal"></span>
+        <span><img src="images/apple-pay.png" alt="Apple Pay"></span>
+        <span><img src="images/tap-to-pay.png" alt="Tap To Pay"></span>
+      </section>
+
+      
+      <section class="footer-middle">
+        <div class="newsletter-container">
+          <h3>NYHETER & TILBUD</h3>
+        
+          <article class="newsletter">
+            <p>Meld deg på nyhetsbrev her</p>
+            <form>
+              <input type="email" placeholder="ola@example.com" />
+              <button type="submit">Send</button>
+            </form>
+            <a href="#">Kjøp reisegavekort</a>
+          </article>
+        </div>
+        <article class="customer-service">
+          <h3>KUNDESERVICE</h3>
+          <ul>
+            <li><a href="#">Spørsmål og Svar</a></li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="Tilgjengeligshetserklæring.xltx">Tilgjengelighetserklæring</a></li>
+          </ul>
+        </article>
+      </section>
+
+      
+      <nav class="social-media">
+        <h3>SOSIALE MEDIER</h3>
+        <span><img src="images/instagram.png" alt="Instagram" /></span>
+        <span><img src="images/facebook.png" alt="Facebook" /></span>
+        <span><img src="images/social.png" alt="Pinterest" /></span>
+        <span><img src="images/tik-tok.png" alt="TikTok" /></span>
+        <span><img src="images/youtube.png" alt="YouTube" /></span>
+      </nav>
+    </footer>
+  </body>
+</html>
